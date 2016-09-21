@@ -58,7 +58,7 @@ namespace HttpClientSample
 
         static async Task RunAsync()
         {
-            client.BaseAddress = new Uri("http://localhost.fiddler:55268/");
+            client.BaseAddress = new Uri("http://localhost:55268/");
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
